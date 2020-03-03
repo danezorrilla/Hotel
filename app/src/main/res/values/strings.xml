@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hotel</string>
+    <string name="guest_name" />
+    <string name="add_new_guess_text">Add New Guess</string>
+</resources>
