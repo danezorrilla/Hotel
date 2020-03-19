@@ -31,9 +31,6 @@ public class NameAdaptor extends BaseAdapter {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.guest_item_layout, parent, false);
 
-        ((TextView) view.findViewById(R.id.prefix_textview)).setText(
-                name.get(position).getPrefix());
-
         ((TextView) view.findViewById(R.id.name_textview)).setText(
                 name.get(position).getActualName());
 

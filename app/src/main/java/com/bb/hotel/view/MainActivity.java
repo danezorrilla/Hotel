@@ -76,13 +76,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void readGuests() {
         guestCount = sharedPreferences.getInt(GUEST_COUNT_KEY, 0);
-        guestList.clear();//To avoid adding the same values
+        nameList.clear();
 
         for (int i = 0; i < guestCount; i++) {
             String name = sharedPreferences.getString(guestKeyPrefix+(i + 1), "unknown");
-            guestList.add(name);
+            //Name Guestname = new Name(name);
+            //guestList.add(Guestname);
 
-            nameList.add(new Name("Mr.", name));
+            nameList.add(new Name(name));
 
             //Log.d("TAG_X", name);
         }
